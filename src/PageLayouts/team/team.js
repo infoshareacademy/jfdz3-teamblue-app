@@ -8,13 +8,10 @@ import Dog from './icons/dog.png'
 import Frog from './icons/frog.png'
 import Fish from './icons/fish.png'
 
-
-
-
 class Team extends React.Component {
     render() {
         return (
-
+<div className="container-fluid">
     <section className="about_us">
         <div className="container sylwiabox" id="naszzespol">
             <h1>Nasz Zespół</h1>
@@ -49,7 +46,8 @@ class Team extends React.Component {
             </div>
         </div>
     </section>
-    );
+</div>
+        );
     }
 }
 

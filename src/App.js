@@ -4,6 +4,7 @@ import logo from './logo.png';
 import './App.css';
 import Features from './PageLayouts/features/features';
 import Team from './PageLayouts/team/team';
+import Main from './PageLayouts/main/main';
 
 class App extends Component {
   render() {
@@ -16,7 +17,7 @@ class App extends Component {
           <img src={logo} alt="logo" className="App-logo"/>
         </div>
 
-
+          <Main/>
           <Features/>
           <Team/>
       </div>

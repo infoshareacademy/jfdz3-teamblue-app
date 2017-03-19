@@ -18,7 +18,7 @@
 
 .features {
   height: 20em;
-  width: 130em;
+  max-width: 130em;
   margin: 16em auto;
 
 }
@@ -28,7 +28,7 @@
   text-align: center;
   height: 8em;
   width: 8em;
-  margin: 0 2em;
+  margin: 1em 2em;
   display: inline-block;
   background-color: #217f7b;
   opacity: 0.8;

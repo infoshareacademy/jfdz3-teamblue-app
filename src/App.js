@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import logo from './logo.png';
 import './App.css';
 import Features from './PageLayouts/features/features';
+import Team from './PageLayouts/team/team';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
 
 
           <Features/>
+          <Team/>
       </div>
 
 

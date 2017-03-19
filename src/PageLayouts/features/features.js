@@ -13,7 +13,11 @@ class Features extends React.Component {
 
         return (
 
+
+
             <div className="features container-fluid">
+
+                <h1>Poznaj funkcjonalności naszego serwisu:</h1>
 
                 <div className="feature-item "><FaMobile /><br/><div className="p-background"><p>Urządzenia mobilne</p></div></div>
                <div className="feature-item "><FaBlind /><br/><div className="p-background"><p>Standardy WCAG 2.0</p></div></div>

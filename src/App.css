@@ -60,6 +60,21 @@
   box-shadow: 10px 10px 0px -5px rgba(0,0,0,0.75);
 }
 
+.features h1 {
+  color: black;
+  text-align: center;
+  font-size: 3em;
+  padding: 1.5em;
+  font-weight: bold;
+  margin-left: 0.15em;
+}
+
+.features > h1::first-letter {
+  font-size: 150%;
+  color: #FF0069;
+}
+
+
 
 /* Początek sekcji o zespole*/
 

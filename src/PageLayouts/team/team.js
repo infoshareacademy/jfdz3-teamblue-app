@@ -1,6 +1,3 @@
-/**
- * Created by trener on 05.03.17.
- */
 import React from 'react';
 import kajetan from './frog.png';
 import olga from './cat.png';
@@ -10,7 +7,7 @@ import natalia from './fish.png';
 class Team extends React.Component {
     render() {
         return (
-<div className="container-fluid">
+<div className="container-fluid team-bg">
     <section className="about_us">
         <div className="container sylwiabox" id="naszzespol">
             <h1>Nasz Zespół</h1>
@@ -25,7 +22,7 @@ class Team extends React.Component {
             <div className="kajetan" id="kajetan">
                  <h3>Kajetan</h3>
                 <img src={kajetan} alt="frog image" />
-                 <p className="team">Współtwórca shop.pet, który w firmie odpowiedzialny jest za dział SEO.
+                 <p className="team">Współtwórca Shop.pet, który w firmie odpowiedzialny jest za dział SEO.
                 Jako freelancer wspiera marketingowo wiele startupów , dzięki czemu tworzy nową platformę z akcesoriami dla zwierząt.
                  Prywatnie ojciec, mąż i pasjonat filmów z lat 80-tych.</p>
              </div>
@@ -34,7 +31,7 @@ class Team extends React.Component {
                 <img src={natalia} alt="fisz image"/>
                 <p className="team"> Fanka filmów Science-Fiction i entuzjastka gotowania oraz zdrowego odżywiania.
                 Lubi długie kąpiele - wtedy czuje się jak ryba w wodzie.
-                Domatorka, która w wolnych chwilach próbuje swoich sił we Front-Endzie.</p>
+                Domatorka, która w wolnych chwilach próbuje swoich sił we Front-Endzie. Nie może żyć bez czekolady.</p>
             </div>
             <div className="olga" id="olga">
                 <h3>Olga</h3>

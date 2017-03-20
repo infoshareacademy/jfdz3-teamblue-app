@@ -9,10 +9,7 @@ class Features extends React.Component {
 
     render() {
 
-
-
         return (
-
 
 
             <div className="features container-fluid">
@@ -25,9 +22,6 @@ class Features extends React.Component {
                <div className="feature-item "><FaLock /><br/><div className="p-background"><p>Bezpieczne zakupy</p></div></div>
 
             </div>
-
-
-
 
         )
     }

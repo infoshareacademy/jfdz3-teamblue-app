@@ -3,7 +3,49 @@
   margin: 0 auto;
 }
 
-/* Navigation*/
+/*Search*/
+
+.search-form {
+  display: inline-block;
+  width: 20em;
+  height: 5em;
+}
+
+.search-form input{
+  font-size: 1.2em;
+  border-radius: 4px;
+  outline: none;
+  border: 2px solid black;
+  width: 12em;
+}
+
+.search-form button {
+  background: white;
+}
+
+.search-form button {
+  font-size: 1.2em;
+}
+
+.btn {
+  padding: 0 !important;
+  position: relative;
+  right: 1.5em;
+  bottom: 0.1em;
+  line-height: 1 !important;
+}
+
+a {
+  outline: 0;
+}
+
+.search-form input#search:focus {
+  box-shadow: 0 0 5px #1CBBB4 ;
+  border: 2px solid #1CBBB4 ;
+  outline: none;
+}
+
+/* Header */
 
 .App-logo {
   max-height: 140px;
@@ -13,12 +55,17 @@
 .App-header {
   height: 12em;
   padding: 1em 0;
-
 }
+
+/* Menu */
 
 .navbar {
   margin: 0 !important;
   z-index: 1000;
+}
+
+.navbar-header svg {
+  color: white;
 }
 
 .navbar-default .navbar-toggle {
@@ -28,11 +75,10 @@
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #FF0069;
-
 }
 
 .navbar-custom {
-  background-color:#1CBBB4;
+  background-color: #1CBBB4;
   border: none;
   width: 100%;
   top: 0;
@@ -48,7 +94,6 @@
   text-align: center;
   padding: 0;
   margin: 0;
-
 }
 
 .navbar-custom .navbar-nav > li > a {
@@ -300,3 +345,5 @@ footer li{
   padding: 0 0.6em;
   font-size: 1em;
 }
+
+

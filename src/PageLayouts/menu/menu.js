@@ -1,22 +1,33 @@
 import React from 'react';
-
+import FaPaw from 'react-icons/lib/fa/paw';
 
 class Nav extends React.Component {
 
 
-  render() {
+    render() {
 
         return (
 
 
-         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <nav className="navbar-custom navbar  navbar-inverse">
+
+                <div className="navbar-header">
+                    <button type="button" className="navbar-toggle collapsed" >
+                        <span className="sr-only">Toggle navigation</span>
+                      <FaPaw />
+                      </button>
+
+                </div>
+
+            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
                 <ul className="nav navbar-nav">
                     <li><a href="index.html">Strona Główna</a></li>
                     <li className="about_us_menu"><a href="#oprodukcie">O Produkcie</a></li>
                     <li className="features_menu"><a href="#features">Funkcjonalności</a></li>
-                    <li className="dropdown"><a href="#naszzespol" className="dropdown-toggle" data-toggle="dropdown"
-                                            role="button" aria-haspopup="true" aria-expanded="false">Nasz Zespół<span className="caret"></span></a>
+                    <li className="dropdown"><a href="#naszzespol" className="dropdown-toggle"
+                                                role="button" >Nasz Zespół<span className="caret"/></a>
                         <ul className="dropdown-menu">
                             <li><a href="#sylwia">Sylwia</a></li>
                             <li><a href="#kajetan">Kajetan</a></li>
@@ -24,8 +35,8 @@ class Nav extends React.Component {
                             <li><a href="#olga">Olga</a></li>
                         </ul>
                     </li>
-                    <li className="dropdown" id="shop"><a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sklep
-                        <span className="caret"></span></a>
+                    <li className="dropdown" id="shop"><a href="#" className="dropdown-toggle"  role="button" >Sklep
+                        <span className="caret"/></a>
                         <ul className="dropdown-menu">
                             <li><a href="">Psy</a></li>
                             <li><a href="">Koty</a></li>
@@ -38,10 +49,12 @@ class Nav extends React.Component {
 
                 </ul>
             </div>
+ </nav>
 
 
 
-        )
+
+    )
     }
 
 }

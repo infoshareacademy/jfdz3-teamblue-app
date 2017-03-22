@@ -11,7 +11,6 @@ class Features extends React.Component {
 
         return (
 
-
             <div className="features container-fluid">
 
                 <h1>Poznaj funkcjonalności naszego serwisu:</h1>
@@ -27,7 +26,6 @@ class Features extends React.Component {
     }
 
 }
-
 
 export default Features;
 

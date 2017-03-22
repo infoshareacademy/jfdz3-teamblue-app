@@ -7,6 +7,7 @@ import Main from './PageLayouts/main/main';
 import Nav from './PageLayouts/menu/menu';
 import Footer from './PageLayouts/footer/footer';
 import Search from './PageLayouts/shop/search/search';
+import Login from './PageLayouts/login/login';
 
 class App extends Component {
   render() {
@@ -15,10 +16,13 @@ class App extends Component {
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css" />
-        <div className="App-header">
+        <div className="App-header row container">
+
             <Search/>
           <img src={logo} alt="logo" className="App-logo"/>
+            <Login/>
         </div>
+
           <Nav/>
           <Main/>
           <Features/>

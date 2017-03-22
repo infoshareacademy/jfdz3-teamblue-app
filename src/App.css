@@ -125,7 +125,14 @@ ul.dropdown-menu > li > a:hover {
   border: none;
 }
 
-/* Features*/
+/* Login */
+
+.login p {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+/* Features */
 
 .features {
   height: 50em;

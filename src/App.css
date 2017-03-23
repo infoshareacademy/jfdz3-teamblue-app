@@ -62,24 +62,20 @@ a {
 .navbar {
   margin: 0 !important;
   z-index: 1000;
-}
-
-.navbar-header svg {
-  color: white;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: #FF0069;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-  background-color: #FF0069;
-}
-
-.navbar-custom {
-  background-color: #1CBBB4;
   border: none;
+  border-radius: 0 !important;
+  outline: none;
+  background-color: #1CBBB4 !important;
+}
+
+
+
+.navbar-inverse  {
+  border: none;
+  border-radius: 0 !important;
+  outline: none;
+  padding: 0.6em 0;
+  background-color: #1CBBB4 !important;
   width: 100%;
   top: 0;
 }
@@ -94,9 +90,10 @@ a {
   text-align: center;
   padding: 0;
   margin: 0;
+  border: none;
 }
 
-.navbar-custom .navbar-nav > li > a {
+.navbar-nav > li > a {
   color: #ffffff;
   font-size: 16px;
   font-weight: bold;
@@ -195,7 +192,7 @@ ul.dropdown-menu > li > a:hover {
 /*About us*/
 
 
-div.container {
+div.sylwiabox {
   width: 100%;
   max-width: 1400px;
   overflow: hidden;

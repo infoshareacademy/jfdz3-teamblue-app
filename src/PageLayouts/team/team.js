@@ -9,7 +9,7 @@ class Team extends React.Component {
         return (
 <div className="container-fluid team-bg">
     <section className="about_us">
-        <div className="container sylwiabox" id="naszzespol">
+        <div className="sylwiabox" id="naszzespol">
             <h1>Nasz Zespół</h1>
             <div className="sylwia" id="sylwia">
                 <h3>Sylwia</h3>

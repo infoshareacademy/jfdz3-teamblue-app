@@ -7,7 +7,7 @@ class Login extends React.Component {
 
         return (
 
-            <div className="login">
+            <div className="login" cla>
 
                <p>Zaloguj się</p>
 

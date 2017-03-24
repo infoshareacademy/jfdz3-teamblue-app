@@ -13,7 +13,7 @@ class Footer extends React.Component {
 
             <footer>
 
-                <div className="footer-bg">
+                <div className="footer-bg container-fluid">
 
                 <div><p> Copyrights TeamBlue</p></div>
                 <div>

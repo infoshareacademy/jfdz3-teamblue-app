@@ -11,7 +11,8 @@ class Main extends React.Component {
 
             <main>
                 <img src={mainbg} alt="logo" className="main-bg"/>
-                <p>Wof Wof - Kupuj u Nas!</p>
+                <p>Kupuj u Nas, bo najtaniej!
+                    <br/>Woof Woof</p>
             </main>
 
         )

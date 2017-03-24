@@ -7,7 +7,7 @@ class Login extends React.Component {
 
         return (
 
-            <div className="login" >
+            <div className="login-box col-md-3" >
 
                <p>Zaloguj się</p>
 

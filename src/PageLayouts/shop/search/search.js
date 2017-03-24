@@ -7,12 +7,11 @@ class Search extends React.Component {
 
         return (
 
-        <div className="search-form form-group">
+        <div className="search-form form-group col-md-3">
 
             <form class="form-group">
 
              <input id="search" type="search" name="search" placeholder="Szukaj produktów..." />
-
 
                 <button type="submit" className="btn">
                     <span className="glyphicon glyphicon-search"/></button>

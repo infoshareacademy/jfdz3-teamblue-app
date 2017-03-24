@@ -8,28 +8,23 @@ class Navigation extends React.Component {
     render() {
 
 
+
         return (
 
             <Navbar inverse collapseOnSelect>
+                <Navbar.Header>
 
                     <Navbar.Toggle />
-
+                </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem eventKey={1} href="#">Strona Główna</NavItem>
+                        <NavItem eventKey={1} href="#">Strona główna</NavItem>
                         <NavItem eventKey={2} href="#">Funkcjonalności</NavItem>
-                        <NavDropdown eventKey={3} title="Nasz zespół" id="basic-nav-dropdown">
-                            <MenuItem eventKey={3.1}>Action</MenuItem>
-                            <MenuItem eventKey={3.2}>Another action</MenuItem>
-                            <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                        </NavDropdown>
+                        <NavItem eventKey={3} href="#">Nasz Zespół</NavItem>
                         <NavItem eventKey={4} href="#">Sklep</NavItem>
                     </Nav>
-
                 </Navbar.Collapse>
             </Navbar>
-
-
 
         )
     }

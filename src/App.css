@@ -2,29 +2,42 @@
   text-align: center;
   margin: 0 auto;
 }
+a:hover, a:active, a:link {
+    outline: none !important;
+}
+
+
 
 /*Search*/
 
 .search-form {
   display: inline-block;
-  width: 20em;
-  height: 5em;
+  width: 28em;
+  height: 7em;
+  padding: 3em 0;
+  margin: 0 auto !important;
+
 }
 
 .search-form input{
-  font-size: 1.2em;
+  font-size: 1.4em;
   border-radius: 4px;
   outline: none;
   border: 2px solid black;
   width: 12em;
+  padding: 0.1em;
+  margin: 0 auto !important;
+}
+
+form {
+  height: 3em;
+  width: 20em;
+  margin: 0 auto !important;
 }
 
 .search-form button {
-  background: white;
-}
-
-.search-form button {
-  font-size: 1.2em;
+  background-color: white;
+  font-size: 1.4em;
 }
 
 .btn {
@@ -37,31 +50,100 @@
 
 
 .search-form input#search:focus {
-  box-shadow: 0 0 5px #1CBBB4 ;
-  border: 2px solid #1CBBB4 ;
+  box-shadow: 0 0 5px #FF4375;;
+  border: 2px solid #FF4375; ;
   outline: none;
 }
 
 /* Header */
 
+.logo-box {
+    display: inline-block;
+}
+
 .App-logo {
   max-height: 140px;
-  max-width: 100%;
+  max-width: 376px;
 }
 
 .App-header {
   height: 12em;
-  padding: 1em 0;
+  max-width: 2200px;
+  padding: 1em;
 }
 
 /* Menu */
 
+nav {
+  background-color: #2bd1c9 !important;
+  text-transform: uppercase !important;
+}
+
+.navbar-inverse {
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-image: none !important;
+}
+
+.nav .navbar-nav{
+    margin: 0 auto !important;
+}
+
+.nav a {
+    color: white !important;
+    font-size: 1.2em;
+    text-shadow: none !important;
+    font-weight: bold !important;
+    padding: 1.5em 1.5em !important;
+}
+
+nav a:hover {
+    color: white !important;
+    background-color: black !important;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center !important;
+     margin: 0  auto !important;
+}
+
+.navbar-nav > li {
+      float: none !important;
+      display: inline-block !important;
+  }
+
+@media screen and (max-width: 768px) {
+
+  .navbar-nav > li {
+    float: none !important;
+    display: block !important;
+  }
+
+  .navbar-nav > li > a {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .navbar-collapse {
+    padding: 0 !important;
+  }
+
+}
 
 /* Login */
 
-.login p {
+.login-box {
+  height: 3em;
+  width: 25em;
   display: inline-block;
-  padding: 0 1em;
+  padding: 3em 4em !important;
+}
+
+.login-box p {
+ font-size: 1.2em !important;
+  font-weight: bold !important;
 }
 
 /* Features */
@@ -114,7 +196,7 @@
   color: black;
   text-align: center;
   font-size: 3em;
-  padding: 1.5em;
+  padding: 1.2em;
   font-weight: bold;
   margin-left: 0.15em;
 }
@@ -219,22 +301,27 @@ section.about_us h3 {
 
 /* Main */
 
-.main-bg {
-  max-width: 100%;
-  max-height: 1294px;
+main {
+  width: 100%;
+  max-height: 694px;
 }
 
-main {
-  position: relative;
+.main-bg {
+  width: 100%;
+  max-height: 694px;
 }
+
 
 main p {
-  position: absolute;
+  position: relative;
   color: white;
-  top: 5em;
-  left: 4em;
   font-size: 3em;
+  bottom: 12em;
+  left: 3em;
+  text-align: justify;
 }
+
+
 
 /*Footer*/
 

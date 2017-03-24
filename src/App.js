@@ -17,10 +17,10 @@ class App extends Component {
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css" />
-        <div className="App-header row container">
+        <div className="App-header container-fluid">
 
             <Search/>
-          <img src={logo} alt="logo" className="App-logo"/>
+          <div className="logo-box col-md-6"><img src={logo} alt="logo" className="App-logo"/></div>
             <Login/>
         </div>
 

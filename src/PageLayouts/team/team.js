@@ -7,7 +7,7 @@ import natalia from './fish.png';
 class Team extends React.Component {
     render() {
         return (
-<div className="container-fluid team-bg">
+<div className="container-fluid team-bg" classID="team">
     <section className="about_us">
         <div className="sylwiabox" id="naszzespol">
             <h1>Nasz Zespół</h1>

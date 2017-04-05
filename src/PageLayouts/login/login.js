@@ -21,7 +21,7 @@ class Login extends React.Component {
                 <FontAwesome
                 name='google'
                 />
-                <span> Login with Google</span>
+                <span> Zaloguj się z Google</span>
             </GoogleLogin>
         </div>
     }

@@ -11,7 +11,7 @@ class Features extends React.Component {
 
         return (
 
-            <div className="features container-fluid">
+            <div className="features container-fluid" id="features">
 
                 <h1>Poznaj funkcjonalności naszego serwisu:</h1>
 

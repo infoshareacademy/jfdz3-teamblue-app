@@ -37,9 +37,9 @@ class App extends Component {
                     <Navbar.Collapse>
                         <Nav>
 
-                            <IndexLinkContainer to="/"><NavItem eventKey={1}>Strona główna</NavItem></IndexLinkContainer>
-                            <LinkContainer to="/features"><NavItem eventKey={2}>Funkcjonalności</NavItem></LinkContainer>
-                            <LinkContainer to="/team"><NavItem eventKey={3}>Nasz Zespół</NavItem></LinkContainer>
+                            <IndexLinkContainer  to={{ pathname: '/'}}><NavItem eventKey={1} >Strona główna</NavItem></IndexLinkContainer>
+                            <LinkContainer to={{ pathname: '/features'}}><NavItem eventKey={2} >Funkcjonalności</NavItem></LinkContainer>
+                            <LinkContainer to={{ pathname: '/team'}}><NavItem eventKey={3} >Nasz Zespół</NavItem></LinkContainer>
                             <NavItem eventKey={4}>Sklep</NavItem>
 
                         </Nav>

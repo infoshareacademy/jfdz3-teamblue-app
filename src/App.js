@@ -16,6 +16,7 @@ import {Route, BrowserRouter} from 'react-router-dom';
 class App extends Component {
     render() {
         return (
+            <BrowserRouter>
             <div className="App">
                 <div id="googleButton"></div>
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
@@ -40,19 +41,19 @@ class App extends Component {
                             <IndexLinkContainer  to={{ pathname: '/'}}><NavItem eventKey={1} >Strona główna</NavItem></IndexLinkContainer>
                             <LinkContainer to={{ pathname: '/features'}}><NavItem eventKey={2} >Funkcjonalności</NavItem></LinkContainer>
                             <LinkContainer to={{ pathname: '/team'}}><NavItem eventKey={3} >Nasz Zespół</NavItem></LinkContainer>
-                            <NavItem eventKey={4}>Sklep</NavItem>
+
 
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
 
-                <BrowserRouter>
+
                     <div>
-                    <Route path="/" exact component={App} />
+                    <Route path="/" exact component={Main} />
                     <Route path="/features" component={Features} />
                     <Route path="/team" component={Team} />
                     </div>
-                </BrowserRouter>
+
 
 
                 <Main/>
@@ -60,7 +61,7 @@ class App extends Component {
                 <Team/>
                 <Footer/>
             </div>
-
+            </BrowserRouter>
         )
     }
 }

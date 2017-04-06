@@ -9,7 +9,7 @@ class Search extends React.Component {
 
         <div className="search-form form-group col-md-3">
 
-            <form class="form-group">
+            <form className="form-group">
 
              <input id="search" type="search" name="search" placeholder="Szukaj produktów..." />
 

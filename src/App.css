@@ -1,4 +1,5 @@
 .App {
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
   text-align: center;
   margin: 0 auto;
 }
@@ -14,7 +15,7 @@ a:hover, a:active, a:link {
   display: inline-block;
   width: 28em;
   height: 7em;
-  padding: 3em 0;
+  padding: 3.4em 0;
   margin: 0 auto !important;
 
 }
@@ -219,7 +220,7 @@ div.sylwiabox {
   padding-bottom: 8em;
 }
 div.sylwia {
-  background-color: white;
+  background-color: rgba(43,209,201,0.8);
   border-radius: 1px;
   float: left;
   margin-left: 2%;
@@ -229,7 +230,7 @@ div.sylwia {
 }
 
 div.kajetan {
-  background-color: white;
+  background-color: rgba(43,209,201,0.8);
   border-radius: 1px;
   float: left;
   margin-right: 1%;
@@ -237,7 +238,7 @@ div.kajetan {
   height:500px;
 }
 div.natalia {
-  background-color: white;
+  background-color: rgba(43,209,201,0.8);
   border-radius: 1px;
   margin-right: 1%;
   float: left;
@@ -245,7 +246,7 @@ div.natalia {
   height:500px;
 }
 div.olga {
-  background-color: white;
+  background-color: rgba(43,209,201,0.8);
   border-radius: 1px;
   margin-right: 1%;
   float: left;
@@ -258,8 +259,8 @@ div.sylwiabox > h1 {
   font-style: normal;
   font-weight: bold;
   margin: 4%;
-  padding: 0;
-  color: white;
+  padding: 0.5em 0;
+  color: black;
 }
 
 div.sylwiabox > h1::first-letter {
@@ -290,13 +291,13 @@ div.sylwiabox img {
 section.about_us h3 {
   font-weight: bold;
   margin: 10%;
-  color: black;
-  font-size: 2em;
+  color: white;
+  font-size: 2.2em;
   padding-top: 0.5em;
 }
 
 .team-bg {
-  background-color: rgba(43,209,201,0.8);
+  background-color: white;
 }
 
 /* Main */
@@ -326,9 +327,9 @@ main p {
 /*Footer*/
 
 footer {
-  height: 6em;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: rgba(43,209,201,0.8);
 }
 
 footer div {
@@ -351,12 +352,13 @@ footer svg {
 
 .footer-bg{
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto !important;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
+  padding: 0 !important;
 }
 
 footer ul {
@@ -370,6 +372,44 @@ footer li{
   margin: 0.6em 0;
   padding: 0 0.6em;
   font-size: 1em;
+}
+
+/* Google login */
+
+.google-login {
+  padding-top: 3em;
+}
+
+.google-login button {
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+
+/* Sklep */
+
+.products-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories {
+  width: 20%;
+  height: 600px;
+  border-right: solid black 2px;
+
+}
+
+.categories p{
+  font-size: 2em;
+  font-weight: bold;
+  padding: 1.5em 0;
+}
+
+.products-list {
+  width: 70%;
+  height: 600px;
+
 }
 
 

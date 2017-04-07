@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import logo from './logo.png';
 import './App.css';
 import Features from './PageLayouts/features/features';
@@ -8,64 +9,77 @@ import Footer from './PageLayouts/footer/footer';
 import Search from './PageLayouts/shop/search/search';
 import Login from './PageLayouts/login/login';
 
+import { withRouter,  Link } from 'react-router-dom';
+import { Navbar, Nav } from 'react-bootstrap/lib';
+import RouteNavItem from './components/RouteNavItem';
+import Routes from './Routes';
 
-import { Navbar, NavItem, Nav } from 'react-bootstrap/lib';
-import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
-import {Route, BrowserRouter} from 'react-router-dom';
+
+
+
 
 class App extends Component {
+
+    handleNavLink = (event) => {
+        event.preventDefault();
+        this.props.history.push(event.currentTarget.getAttribute('href'));
+    };
+
+
+
     render() {
         return (
-            <BrowserRouter>
-            <div className="App">
-                <div id="googleButton"></div>
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css" />
-                <div className="App-header container-fluid">
-
-                    <Search/>
-                    <div className="logo-box col-md-6"><img src={logo} alt="logo" className="App-logo"/></div>
-                    <Login/>
-                </div>
 
 
 
-                <Navbar inverse collapseOnSelect>
-                    <Navbar.Header>
+                <div className="App">
+                    <div id="googleButton"></div>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css" />
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css" />
+                    <div className="App-header container-fluid">
 
-                        <Navbar.Toggle />
-                    </Navbar.Header>
-                    <Navbar.Collapse>
-                        <Nav>
-
-                            <IndexLinkContainer  to={{ pathname: '/'}}><NavItem eventKey={1} >Strona główna</NavItem></IndexLinkContainer>
-                            <LinkContainer to={{ pathname: '/features'}}><NavItem eventKey={2} >Funkcjonalności</NavItem></LinkContainer>
-                            <LinkContainer to={{ pathname: '/team'}}><NavItem eventKey={3} >Nasz Zespół</NavItem></LinkContainer>
-
-
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
-
-
-                    <div>
-                    <Route path="/" exact component={Main} />
-                    <Route path="/features" component={Features} />
-                    <Route path="/team" component={Team} />
+                        <Search/>
+                        <div className="logo-box col-md-6"><img src={logo} alt="logo" className="App-logo"/></div>
+                        <Login/>
                     </div>
 
 
 
-                <Main/>
-                <Features/>
-                <Team/>
-                <Footer/>
-            </div>
-            </BrowserRouter>
+                    <div>
+
+                    <Navbar inverse collapseOnSelect>
+                        <Navbar.Header>
+                            <Navbar.Toggle />
+                        </Navbar.Header>
+                        <Navbar.Collapse>
+                            <Nav>
+
+                                <RouteNavItem onClick={this.handleNavLink} href="/">Strona główna</RouteNavItem>
+                                <RouteNavItem onClick={this.handleNavLink} href="/features">Features</RouteNavItem>
+                                <RouteNavItem onClick={this.handleNavLink} href="/team">Nasz zespół</RouteNavItem>
+                                <RouteNavItem onClick={this.handleNavLink} href="/shop">Sklep</RouteNavItem>
+
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
+
+
+                    <Routes/>
+
+
+
+                        </div>
+
+
+
+                    <Footer/>
+                </div>
+
+
         )
     }
 }
 
 
 
-export default App;
+export default withRouter(App);

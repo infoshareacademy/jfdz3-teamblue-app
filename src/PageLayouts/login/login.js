@@ -10,8 +10,11 @@ const responseGoogle = (response) => {
 class Login extends React.Component {
 
 
+
     render() {
-        return <div>
+        return (
+
+        <div className="google-login">
             <GoogleLogin
                 clientId={'763009107746-djupr31f04g6mrdvi2o25f2l7p1eb7n6.apps.googleusercontent.com'}
                 onSuccess={responseGoogle}
@@ -24,6 +27,7 @@ class Login extends React.Component {
                 <span> Zaloguj się z Google</span>
             </GoogleLogin>
         </div>
+        )
     }
 }
 

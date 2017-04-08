@@ -51,7 +51,7 @@ form {
 
 
 .search-form input#search:focus {
-  box-shadow: 0 0 5px #FF4375;;
+  box-shadow: 0 0 5px #FF4375;
   border: 2px solid #FF4375; ;
   outline: none;
 }
@@ -130,7 +130,6 @@ nav a:hover {
   .navbar-collapse {
     padding: 0 !important;
   }
-
 }
 
 /* Login */
@@ -174,7 +173,6 @@ nav a:hover {
   width: 7em;
   height: 3.9em;
   margin: 0 auto;
-  padding: 1em 0 0 0;
 }
 
 .feature-item svg {
@@ -209,7 +207,6 @@ nav a:hover {
 
 /*About us*/
 
-
 div.sylwiabox {
   width: 100%;
   max-width: 1400px;
@@ -218,6 +215,7 @@ div.sylwiabox {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 8em;
+
 }
 div.sylwia {
   background-color: rgba(43,209,201,0.8);
@@ -236,6 +234,7 @@ div.kajetan {
   margin-right: 1%;
   width:23%;
   height:500px;
+
 }
 div.natalia {
   background-color: rgba(43,209,201,0.8);
@@ -288,6 +287,7 @@ div.sylwiabox img {
   margin: 2%;
 
 }
+
 section.about_us h3 {
   font-weight: bold;
   margin: 10%;
@@ -304,14 +304,13 @@ section.about_us h3 {
 
 main {
   width: 100%;
-  max-height: 694px;
+  max-height: 760px;
 }
 
 .main-bg {
   width: 100%;
-  max-height: 694px;
+  max-height: 760px;
 }
-
 
 main p {
   position: relative;
@@ -321,7 +320,6 @@ main p {
   left: 3em;
   text-align: justify;
 }
-
 
 
 /*Footer*/
@@ -388,28 +386,38 @@ footer li{
 
 .products-container {
   width: 100%;
-  height: 600px;
+  height: 700px;
   display: flex;
   justify-content: space-between;
 }
 
 .categories {
   width: 20%;
-  height: 600px;
-  border-right: solid black 2px;
-
+  height: 700px;
+  border-right: solid black 0;
+  background-color: #FFF452;
 }
 
-.categories p{
+.categories h2 {
   font-size: 2em;
   font-weight: bold;
-  padding: 1.5em 0;
+  background-color: #FF4375;
+  color: white;
+  padding: 1em 0;
+  margin: 0 !important;
 }
 
 .products-list {
   width: 70%;
-  height: 600px;
-
+  height: 700px;
 }
 
+.categories p {
+  font-size: 1.5em;
+  padding: 0.2em 0;
+}
+.categories-items {
 
+  margin-top: 2em;
+
+}

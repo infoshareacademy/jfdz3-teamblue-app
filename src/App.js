@@ -55,7 +55,7 @@ class App extends Component {
                             <Nav>
 
                                 <RouteNavItem onClick={this.handleNavLink} href="/">Strona główna</RouteNavItem>
-                                <RouteNavItem onClick={this.handleNavLink} href="/features">Features</RouteNavItem>
+                                <RouteNavItem onClick={this.handleNavLink} href="/features">Funkcjonalności</RouteNavItem>
                                 <RouteNavItem onClick={this.handleNavLink} href="/team">Nasz zespół</RouteNavItem>
                                 <RouteNavItem onClick={this.handleNavLink} href="/shop">Sklep</RouteNavItem>
 

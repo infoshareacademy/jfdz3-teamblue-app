@@ -410,6 +410,7 @@ footer li{
 .products-list {
   width: 70%;
   height: 700px;
+  margin: 0 auto;
 }
 
 .categories p {
@@ -417,7 +418,33 @@ footer li{
   padding: 0.2em 0;
 }
 .categories-items {
-
   margin-top: 2em;
+}
 
+.list-group a {
+  height: 8em;
+  display: block;
+  padding: 3em;
+  border-radius: 0 !important;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.list-group a:hover {
+  color: #FFF452;
+}
+
+ul.list-group {
+  margin: 2.5em auto;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.price {
+  font-size: 2em;
+  color: red;
+  float: right;
+  display: block;
+  padding-bottom: 0.8em;
 }

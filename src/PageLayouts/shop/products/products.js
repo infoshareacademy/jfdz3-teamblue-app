@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Categories from './Categories';
 
+
 class Shop extends React.Component {
 
     constructor(props) {

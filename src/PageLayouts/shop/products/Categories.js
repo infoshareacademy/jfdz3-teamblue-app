@@ -29,9 +29,14 @@ function Categories (props) {
             >
 <img src={contact.image_url} style={imageStyle} alt="" />
 
+
+
                 {contact.name}  <span className="price">  {contact.price_gross} PLN  </span>
                 <small className="pull-right clear" style={{clear:'both'}}>{contact.categories.join(', ')}</small>
+
+
             </a>
+
 
 
 </div>

@@ -42,8 +42,16 @@ class Login extends React.Component {
             )
         }else{
             user = JSON.parse( user );
+            let styles = {
+                fontSize: '150%',
+                display: 'block',
+                marginTop: '2.5em',
+                color:  '#FF4375',
+                fontWeight: 'bold'
+            }
+
             return (
-                <a href="javascript:void(0)" onClick={ ()=> this.logoutUser() }>Witaj {user.profileObj.name} > Wyloguj</a>
+                <a href="javascript:void(0)" style={styles} onClick={ ()=> this.logoutUser() }>Witaj {user.profileObj.name} > Wyloguj</a>
             )
 
         }

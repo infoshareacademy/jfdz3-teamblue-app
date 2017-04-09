@@ -8,6 +8,16 @@ function Categories (props) {
         }
         onClick(index);
     }
+    function addToCart(name, price){
+        let cart = JSON.parse(localStorage.getItem('cartItems'));
+        if( !Array.isArray(cart)){
+            cart = [];
+        }
+        cart.push( {name: name, price: price});
+        localStorage.setItem('cartItems', JSON.stringify(cart));
+
+
+    }
     const contactButtons = contacts.map((contact, index) => {
         const key = index;
         const activeClass = index === active ? 'active' : '';
@@ -17,10 +27,14 @@ function Categories (props) {
             width: 150
         };
 
+        // var cartItems = {name: name , price: price_gross};
+
         return (
 
 
-     <div  style={{border:'0 !important'}}>
+
+
+     <div >
             <a
 
 
@@ -39,6 +53,7 @@ function Categories (props) {
 
             </a>
 
+<button style={{display:"inline-block"}} onClick={() => addToCart(contact.name, contact.price_gross)}>Dodaj do koszyczka</button> <span>{localStorage.getItem('cartItems.name')}</span>
 
 
 </div>

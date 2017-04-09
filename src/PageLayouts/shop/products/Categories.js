@@ -13,26 +13,28 @@ function Categories (props) {
         const activeClass = index === active ? 'active' : '';
 
         var imageStyle = {
-            height: 50,
-            width: 50
+            height: 120,
+            width: 150
         };
 
         return (
 
 
-     <div>
+     <div  style={{border:'0 !important'}}>
             <a
+
+
                 key={key}
                 onClick={contactClicked.bind(null, index)}
                 href="#"
                 className={`list-group-item ${activeClass}`}
             >
-<img src={contact.image_url} style={imageStyle} alt="" />
+<img className="product-img" src={contact.image_url} style={imageStyle} alt="" />
 
 
 
                 {contact.name}  <span className="price">  {contact.price_gross} PLN  </span>
-                <small className="pull-right clear" style={{clear:'both'}}>{contact.categories.join(', ')}</small>
+                <small className="pull-right clear" style={{clear:'both',top:'-35px' }}>{contact.categories.join(', ')}</small>
 
 
             </a>

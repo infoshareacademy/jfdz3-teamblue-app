@@ -418,13 +418,13 @@ footer li{
   padding: 0.2em 0;
 }
 .categories-items {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .list-group a {
   height: 8em;
   display: block;
-  padding: 3em;
+  padding: 1em;
   border-radius: 0 !important;
   font-weight: bold;
   font-size: 1.5em;
@@ -437,14 +437,62 @@ footer li{
 
 ul.list-group {
   margin: 2.5em auto;
-  border: 0 !important;
+  border: none  !important;
+  outline: none !important;
+  box-shadow: none !important;
   border-radius: 0 !important;
 }
 
 .price {
   font-size: 2em;
-  color: red;
+  color: #FF4375;
   float: right;
   display: block;
-  padding-bottom: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.categories-items a{
+  font-size: 1.2em;
+  padding: 0.2em 0;
+  color: black;
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  text-align: center;
+}
+
+.categories-items a:hover{
+  font-size: 1.2em;
+  padding: 0.2em 0;
+  color: #FF4375;
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  text-align: center;
+  text-decoration: none;
+  cursor:default;
+}
+
+.categories-items li {
+  list-style-type: none;
+  font-size: 1.5em;
+  padding: 0.2em 0;
+  color: black;
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif !important;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.categories-items ul {
+  margin: 0 auto;
+  padding: 0 !important;
+}
+
+div.products-list {
+  border: none  !important;
+}
+
+div.products-list > div {
+  border: none !important;
+}
+
+img.product-img {
+  float: left;
 }

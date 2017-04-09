@@ -7,7 +7,7 @@ import ReactPaginate from 'react-paginate';
 
 class Shop extends React.Component {
 
-    elementsPerPage = 4;
+    elementsPerPage = 3;
 
     categories = ['Kot', 'Pies', 'Karma sucha', 'Karma mokra', 'Odzież', 'Akcesoria'];
 
@@ -82,13 +82,16 @@ class Shop extends React.Component {
 
 
                  <div className="categories-items">
-                  <a onClick={e => this.filterData()}> Wszystko </a>
-                  <a onClick={e => this.filterData(0)}> Kot </a>
-                      <a onClick={e => this.filterData(1)}>Pies </a>
-                          <a onClick={e => this.filterData(5)}>Akcesoria </a>
-                              <a onClick={e => this.filterData(4)}>Odzież </a>
-                                  <a onClick={e => this.filterData(2)}>Karma sucha </a>
-                                      <a onClick={e => this.filterData(3)}>Karma mokra </a>
+                     <ul>
+                         <li style={{fontWeight:'bold'}}><a onClick={e => this.filterData()}> Wszystko </a></li>
+                         <li><a onClick={e => this.filterData(0)}> Kot </a></li>
+                         <li><a onClick={e => this.filterData(1)}>Pies </a></li>
+                         <li><a onClick={e => this.filterData(5)}>Akcesoria </a></li>
+                         <li><a onClick={e => this.filterData(4)}>Odzież </a></li>
+                         <li><a onClick={e => this.filterData(2)}>Karma sucha </a></li>
+                         <li><a onClick={e => this.filterData(3)}>Karma mokra </a></li>
+
+                     </ul>
                      </div>
 
 
@@ -100,9 +103,9 @@ class Shop extends React.Component {
                       contacts={this.getPaginatedData()}
 
                   />
-<hr />
+
                   {this.paginator()}
-<hr />
+
 
               </div>
 
